@@ -1,25 +1,15 @@
-import React,{Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Card from './Card';
-import Hello from './Hello';
+import React from 'react';
+import CardList from './CardList';
+import {Robot} from '../robots';
+import SearchBox from './SearchBox';
 
-
-class App extends Component {
-  render(){
-  return (
-    <div className="App">
-      <header className="App-header ">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="tr">
-          welcome to react
-          <Card greeting={'chinedu'}/>
-          <Hello welcome={'okorie'}/>
-        </p>
-      </header>
+const App =()=>{
+  return(
+    <div className="tc">
+      <h1>Robots</h1>
+      <SearchBox />
+      <CardList  robot={Robot}/>
     </div>
   );
 }
-}
-
 export default App;

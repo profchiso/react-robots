@@ -1,11 +1,17 @@
 import React from 'react';
 import Card from './Card' ;
-//import {Robot} from '../robots';
+
 
 const CardList =({robot})=>{
   const allcard = robot.map((each,i)=>{
-    return <Card id={robot[i].id} name={robot[i].username} email={robot[i].email}/>
+    return(<Card 
+    key={i} 
+    id={each.id}
+    name={each.username}
+     email={each.email}
+     />);
   })
+  console.log(allcard);
   return(
     <div className="tc">
       {allcard}
