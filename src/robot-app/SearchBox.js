@@ -3,7 +3,7 @@ import React from "react";
 const SearchBox =()=>{
   return(
     <div>
-      <h1>serch</h1>
+      <input className="bg-light-green pa2 ba b--green" type="search" placeholder="search robot"></input>
     </div>
 
   );
